@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <br><br>
+        <h1 style="color:rgb(255, 0, 0)">Act for ACTivism</h1>
+        <p>Post about any recent incident you witnessed or were a victim of. Its important to come forward and fight for
+            rights you believe in. It doesn't matter if you were just a bystander, report any unjust
+            circumstances/events. Feel free to add photos, videos, or any other form of evidence.</p>
+        <br>
+        <div class="col-md-6" style="margin: 0; float:none">
+            <form action="posts.php" method="POST">
+                <div class="form-group">
+                    <label for="exampleInputTopic11">Topic</label>
+                    <input type="text" class="form-control" id="exampleInputTopic1" name="topic"
+                        aria-describedby="TopicHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputImpact">Location</label>
+                    <input type="text" class="form-control" name="place" id="exampleInputImpact">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputTopic11">Date(Of Event)</label>
+                    <input type="date" class="form-control" id="exampleInputTopic1" name="date"
+                        aria-describedby="TopicHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputCaption">Caption</label>
+                    <input type="text" class="form-control" id="exampleInputTopic1" name="caption"
+                        aria-describedby="TopicHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputImpact">Perpetrators (if any)</label>
+                    <input type="text" class="form-control" name="perpetrators" id="exampleInputImpact">
+                </div>
+                <br>
+                <br>
+                <br>
+                <p> <strong>DO NOT</strong> post <b>fake</b> or <b>forged</b> content.</p>
+                <button type="submit" class="btn btn-primary"> Add Post </button>
+            </form>
