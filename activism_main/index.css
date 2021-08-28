@@ -6,7 +6,7 @@
 }
 
 /* Links inside the navbar */
-.navbar a {
+.navbar a{
   float: left;
   font-size: 16px;
   color: white;
@@ -28,13 +28,14 @@
   outline: none;
   color: white;
   padding: 14px 16px;
+  margin-top: 20px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
   background-color: red;
 }
 
@@ -66,4 +67,23 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.fistimage {
+  width: 40px;
+  height: auto;
+}
+.title{
+  color: white;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  font-size: 150px;
+}
+
+.formslink:hover{
+  background-color: red;
+  
+}
+
+.bing{
+  background-image:url("morefists.jpg");
 }
